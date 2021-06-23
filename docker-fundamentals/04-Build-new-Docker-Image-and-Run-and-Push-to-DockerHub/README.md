@@ -5,12 +5,14 @@
 - https://hub.docker.com/
 - **Important Note**: In the below listed commands wherever you see **nirajp82** you can replace with your docker hub account id. 
 - Create a docker file in any directory. Here I am using Powershell and notepad++
+```
 - -  New-Item -Path . -name Dockerfile -ItemType "file"
 - - notepad++.exe .\Dockerfile
 - - Copy/Paste following content in Dockerfile
    FROM nginx
    COPY index.html /usr/share/nginx/html
-- Create Index.html: New-Item -path . -name index.html -ItemType "file"
+ ``` 
+- Create Index.html: ```New-Item -path . -name index.html -ItemType "file"```
 
 ## Step-1: Run the base Nginx container
 - Access the URL http://localhost
